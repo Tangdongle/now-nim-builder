@@ -1,6 +1,6 @@
 {
   "name": "now-nim-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ZEIT Now v2.0 builder for Nim",
   "main": "index.js",
   "files": [
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Tangdongle/now-nim-builder",
   "dependencies": {
     "@now/build-utils": "^0.4.31",
-    "node-fetch": "^2.3.0",
-    "execa": "^1.0.0"
+    "execa": "^1.0.0",
+    "node-fetch": "^2.3.0"
   }
 }
