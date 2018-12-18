@@ -19,6 +19,7 @@
   "dependencies": {
     "@now/build-utils": "^0.4.31",
     "execa": "^1.0.0",
-    "node-fetch": "^2.3.0"
+    "node-fetch": "^2.3.0",
+    "fs.promised": "3.0.0"
   }
 }

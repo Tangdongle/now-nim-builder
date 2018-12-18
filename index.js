@@ -1,17 +1,12 @@
-const path = require('path');
 const execa = require('execa');
-const fetch = require('node-fetch');
-const { readFile, writeFile } = require('fs.promised');
 const getWritableDirectory = require('@now/build-utils/fs/get-writable-directory.js');
 
 const CHOOSENIM_URL = "https://nim-lang.org/choosenim/init.sh"
 const CURL_ARGS = "-sSf | sh"
 
-exports.analyze = function({ files, entrypoint }) {
-  return files[entrypoint].digest;
-}
+exports.analyze = ({ files, entrypoint }) => files[entrypoint].digest;
 
-exports.build = async ({ files, entrypoint }) {
+exports.build = async ({ files, entrypoint, config }) => {
   console.log('downloading files...');
   const srcDir = getWritableDirectory();
 
